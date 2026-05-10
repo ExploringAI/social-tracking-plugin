@@ -1,0 +1,88 @@
+# Hermes Social Tracking Plugin .gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Dependencies
+*.egg-info/
+*.dist-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test
+.coverage
+.coverage.*
+.cache
+pytest.ini
+htmlcov/
+*.cover
+
+# Documentation
+docs/_build/
+
+# Local data
+*.sqlite
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Distribution
+dist/
+build/
+*.whl
+
+# IDE settings
+*.sublime-project
+*.sublime-workspace
+*.suo
+
+# Editor backup files
+*~
+*.bak
+
+# OS specific
+*~
+*.swp
+*.swo
+*.log
+*.aux
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.snm
+*.nav
+*.vrb
+*.lot
+*.lof
+*.lot
+*.lol
+*.lot
+*.lot

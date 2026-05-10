@@ -1,0 +1,9 @@
+# Core dependencies for social_tracking plugin
+pydantic>=1.10.0
+
+# Optional: For advanced entity extraction using spaCy
+# spacy>=3.0.0
+# python -m spacy download en_core_web_sm
+
+# Optional: For async database operations (if using aiosqlite instead of sqlite3)
+# aiosqlite>=0.18.0
