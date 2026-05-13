@@ -129,6 +129,31 @@ When advanced features are enabled, additional tools become available:
 
 The ToM pipeline can be invoked via `delegate_task` or integrated into prompts for sophisticated social reasoning.
 
+### Optional X/Twitter Signals
+
+Social Tracking can stay focused on memory, trust, and commitments while another
+Hermes Agent plugin gathers public X/Twitter context. If your workflow needs
+tweet search, reply reading, user lookup, tweet monitoring, follower export, or
+approval-gated posts, replies, and DMs, install
+[Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet):
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+After setting `XQUIK_API_KEY` in the Hermes Agent environment, use Hermes Tweet
+tools such as `tweet_explore`, `tweet_read`, and `tweet_action` to collect the
+external signal, then record only the durable social facts in this plugin:
+
+```bash
+/social_add_interaction summary="Read Alice's X thread and 3 replies about the roadmap" persons=['Alice'] kind=x_thread
+/social_add_person name=Alice roles=['founder', 'x-contact']
+```
+
+Keep unattended agents read-only for search Twitter/X, read tweet replies, look
+up users, monitor tweets, and export followers. Require explicit human
+confirmation before post tweets, post replies, or send DMs.
+
 ## Database Schema
 
 The plugin maintains a separate SQLite database with these tables:
