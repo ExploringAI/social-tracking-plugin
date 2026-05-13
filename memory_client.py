@@ -100,6 +100,10 @@ class MemoryClient:
     def recall_recent(self, session_id: str, top_k: int = 5) -> list[dict]:
         return self.recall(f"recent session {session_id}", top_k=top_k)
 
+    def consolidate(self) -> None:
+        """No-op placeholder; Mazemaker auto-consolidates via neural_remember."""
+        return
+
     def format_context_block(self, memories: list[dict],
                               label: str = "MEMORY CONTEXT") -> str:
         if not memories:

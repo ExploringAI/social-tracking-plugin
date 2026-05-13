@@ -314,6 +314,11 @@ social_tracking/
 
 ## Changelog
 
+### v0.3.1 (2026-05-13)
+- Fixed: ``complete_structured()`` input format — use Hermes v0.13 ``type``/``text`` blocks instead of ChatML ``role``/``content``
+- Fixed: ``MemoryClient.consolidate()`` no-op to prevent session-end crashes
+- Bumped Hermes compatibility note to v0.13+
+
 ### v0.3.0 (2026-05-13)
 - LLM-powered social NLP extraction with regex fallback for commitments, relationships, and sentiment
 - Relationship detection: family, professional, personal, adversarial

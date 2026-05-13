@@ -1,5 +1,5 @@
 name: social-tracking
-version: 0.3.0
+version: 0.3.1
 description: Human-like social awareness layer (auto-detection + relationships + explicit tools) for Hermes
 provides_tools:
   - social_remember

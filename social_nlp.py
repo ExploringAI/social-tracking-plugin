@@ -163,7 +163,7 @@ def extract_social_signals(
 
     input_text = combined + person_hints
 
-    messages = [{"role": "user", "content": input_text}]
+    messages = [{"type": "text", "text": input_text}]
 
     try:
         result = llm.complete_structured(
